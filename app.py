@@ -1,6 +1,10 @@
+# Common Classes
+import json
 from flask import Flask
-app = Flask(__name__)
 
+# Private Classes
+
+app = Flask(__name__)
 
 @app.route('/')
 def hello():
@@ -11,4 +15,9 @@ def index():
     return "index"
 
 if __name__ == '__main__':
-    app.run()
+    # Load configuration
+    with open('config.json', 'r') as f:
+        data = f.read()
+    config = json.loads(data)
+
+    app.run(host=config['host'], port=config['port'])
