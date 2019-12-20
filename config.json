@@ -2,7 +2,7 @@
 	"host": "ec2-18-191-163-239.us-east-2.compute.amazonaws.com",
 	"port": 5000,
 	"DATABASE_URL": "localhost",
-	"DATABASE_USER": "root",
-	"DATABASE_PASS": "thswjdtn",
+	"DATABASE_USER": "slc",
+	"DATABASE_PASS": "saitslc12345",
 	"DATABASE_DBNAME": "example"
 }
